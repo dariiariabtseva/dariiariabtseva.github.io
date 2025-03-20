@@ -1,0 +1,331 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background:black;
+
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #F4BB44; 
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+ background: #4CAF50;
+  color: yellow;
+    padding: 120px 20px;
+/*  background-image: url('images/img.jpg'); /* Path to your background image */
+   background-image: url('images/logo.gif');
+      background-size: cover;        /* Cover the entire hero section */
+      background-position: center;   /* Center the image */
+      background-repeat: no-repeat;  /* Prevent the image from repeating */
+      color:  white;                  /* Text color to stand out on the background */
+      text-align:right ;
+
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero .cta-button {
+  background: #fff;
+  color: #3FBEC5;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.hero .cta-button:hover {
+  background: #45a049;
+}
+
+/* Features Section */
+#features {
+  padding: 60px 20px;
+  background: #FFFDD0;
+  text-align: center;
+  
+}
+
+#features h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 60px 20px;
+  background: #FFFFF0;
+  text-align: center;
+}
+
+.testimonial {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 60px 20px;
+  text-align: center;
+  background-image: url('images/max.png'); /* Path to your background image */
+  background-size: cover;        /* Cover the entire hero section */
+  background-position: center;   /* Center the image */
+  background-repeat: no-repeat;  /* Prevent the image from repeating */
+  color:  black;                  /* Text color to stand out on the background */
+  text-align: center;
+  padding: 80px 20px;
+  
+}
+
+#pricing .pricing-plan {
+ display: inline-block;
+
+  width: 40%;
+  margin: 0 5%;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#pricing .pricing-plan1 {
+ display: inline-block;
+  width: 40%;
+  margin: 0 5%;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#pricing .pricing-plan h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+#pricing .pricing-plan1 h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#pricing .pricing-plan .cta-button {
+  margin-top: 20px;
+}
+
+#pricing .pricing-plan1 .cta-button {
+  margin-top: 20px;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+ color: #F4BB44;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  text-decoration: none;
+  color: yellow;
+  margin: 0 10px;
+}
+
+footer .social-links a:hover {
+  color: yellow;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .feature-item, .pricing-plan {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+}
+
+
+.video-section {
+    text-align: center;
+    padding: 30px;
+    background-color: #FFFAA0;
+}
+
+.video-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Gallery Section */
+.gallery {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+To make the images in your gallery larger, you can adjust the minmax values in the grid layout and add specific CSS properties to scale up the images while keeping the layout responsive. Here's how you can modify your gallery to display bigger images:
+
+Updated CSS for Larger Images
+css
+Копировать код
+/* Gallery Section */
+.gallery {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 28px; /* Slightly larger title */
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Grid Layout with Larger Columns */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Increased min size */
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps image proportions */
+    border-radius: 8px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery-container img:hover {
+    transform: scale(1.1); /* Slightly larger scale */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* Single-column layout for very small screens */
+    }
+}
+
+
+/* Product info section */
+.product-info {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.product-info h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-info .description {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.original-price {
+  font-size: 1.2rem;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  font-size: 1.5rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
