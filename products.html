@@ -7,108 +7,116 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
 </head>
 <body>
-    <!-- Header -->
-    <header>
+
+	<!-- Header -->
+	<header>
+	    <nav>
+	        <div class="header logo">
+	            <ul class="navbar">
+	                <li><a href="index.html">LAMP STORE</a></li>
+	            </ul>
+	        </div>
+	        <!-- Burger Icon -->
+	        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+	            <span class="bar"></span>
+	            <span class="bar"></span>
+	            <span class="bar"></span>
+	        </div>
+	    </nav>
+		<!-- Main Navigation Menu -->
 		<nav>
-				<div class="header .logo">
-		<ul>
-		<li>
-				  <a href="index.html">Lamp Store</a> </ul></li>
-				</div>
-				</nav>
-			
-        <nav>
-            <ul>
-				<li><a href="#products">
-									<a href="products.html">Lamps</a>
-								 </a></li>
-                <li><a href="#pricing">Special offers</a></li>
-              
-            </ul>
-        </nav>
-    </header>
+		    <ul class="navbar" id="navbar">
+				<li><a href="index.html">Home</a></li>
+		        <li><a href="about_us.html">About Us</a></li>
+		        <li><a href="contacts.html">Contacts</a></li>
+		    </ul>
+		</nav>
+	</header>
+	<!-- Link to your JavaScript file -->
+	<script src="script.js"></script>
 
-		<!-- Gallery Section -->
-		<section class="gallery" id="gallery">
-		    <h2>Gallery</h2>
-		    <div class="gallery-container">
-				<figure>
-				               <img src="images/product1.jpg" alt="Lamp Design 1">
-				            <figcaption>Eclipse Mood Lamp</figcaption>
-							
-				        </figure>	
+	<!-- Gallery Section -->
+	<section class="gallery" id="gallery">
+		<div class="gallery-container">
+			<figure>
+			           <a href="product1.html"> <!-- Link to the first product page -->
+			               <img src="images/product1.jpg" alt="Lamp Design 1">
+			               <figcaption>Eclipse Mood Lamp</figcaption>
+			           </a>
+			       </figure>
 
-						<figure>
-		        <img src="images/product2.jpg" alt="Lamp Design 2">
-				<figcaption>Aura Glow Table Lamp</figcaption>
-							        </figure>	
-									<figure>
-		        <img src="images/product3.jpeg" alt="Lamp Design 3">
-				<figcaption>NovaBeam Desk Lamp</figcaption>
-							        </figure>
-									<figure>
-		        <img src="images/product4.jpg" alt="Lamp Design 4">	
-				<figcaption>LuxeRadiance Lamp</figcaption>
-							        </figure>	     
-		    </div>
-		</section>
+			       <!-- Link wrapped around the figure for the second product -->
+			       <figure>
+			           <a href="product2.html"> <!-- Link to the second product page -->
+			               <img src="images/product2.jpg" alt="Lamp Design 2">
+			               <figcaption>Aura Glow Table Lamp</figcaption>
+			           </a>
+			       </figure>
 
-		  <!-- Pricing Section -->
-		  <section id="pricing">
-		<!--     <h2>Pricing Plans</h2>-->
-		    <div class="pricing-plan">
-		          <h1>Special Offer </h1>
-				  <div id="countdown"></div>
+			       <!-- Link wrapped around the figure for the third product -->
+			       <figure>
+			           <a href="product3.html"> <!-- Link to the third product page -->
+			               <img src="images/product3.jpg" alt="Lamp Design 3">
+			               <figcaption>NovaBeam Desk Lamp</figcaption>
+			           </a>
+			       </figure>
 
-				  		     <script>
-				  		         // Set the target date for the countdown (e.g., February 15, 2025 at 00:00:00)
-				  		         const targetDate = new Date("February 15, 2025 00:00:00").getTime();
+			       <!-- Link wrapped around the figure for the fourth product -->
+			       <figure>
+			           <a href="product4.html"> <!-- Link to the fourth product page -->
+			               <img src="images/product4.jpg" alt="Lamp Design 4">
+			               <figcaption>LuxeRadiance Lamp</figcaption>
+			           </a>
+			       </figure> 	     	
+		</div>
+	</section>
 
-				  		         // Update the countdown every second
-				  		         const countdownInterval = setInterval(function() {
-				  		             // Get the current date and time
-				  		             const now = new Date().getTime();
+		<!-- Pricing Section -->
+	<section id="pricing">
+	    <div class="pricing-container">
+	        <h1>Special Offer</h1>
+	        <div id="countdown"></div>
+	        <script>
+	            const targetDate = new Date("September 15, 2025 00:00:00").getTime();
 
-				  		             // Calculate the time remaining
-				  		             const timeRemaining = targetDate - now;
+	            const countdownInterval = setInterval(function() {
+	                const now = new Date().getTime();
+	                const timeRemaining = targetDate - now;
 
-				  		             // Calculate days, hours, minutes, and seconds
-				  		             const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-				  		             const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				  		             const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-				  		             const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+	                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+	                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+	                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-				  		             // Display the countdown
-				  		             document.getElementById("countdown").innerHTML =
-				  		                 days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+	                document.getElementById("countdown").innerHTML =
+	                    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-				  		             // If the countdown is over, display a message
-				  		             if (timeRemaining < 0) {
-				  		                 clearInterval(countdownInterval);
-				  		                 document.getElementById("countdown").innerHTML = "The special offer has ended!";
-				  		             }
-				  		         }, 1000);  // Update every second
-				  		     </script>
-				  <span class="original-price">€50</span>
-				  						<span class="discounted-price">€30</span>
-		          <p>  <a href="#" class="cta-button">Buy Now</a>
-		      </div>  <p>
-					     
-		  </section>
-	
-	
+	                if (timeRemaining < 0) {
+	                    clearInterval(countdownInterval);
+	                    document.getElementById("countdown").innerHTML = "The special offer has ended!";
+	                }
+	            }, 1000);
+	        </script>
 
-		  <!-- Footer -->
-		  <footer>
-		      <p>&copy; 2025 Dariia Riabtseva | Lamps | All Rights Reserved</p>
-
-		  	<div class="social-links">
-		  	    <a href="https://www.facebook.com">Facebook</a>
-		  	    <a href="https://www.instagram.com/">Instagram</a>
-		  	</div>
-		   </footer>
-	
-
-
+	        <div class="pricing-card">
+	            <div class="pricing-card-content">
+	                <span class="original-price">€50</span>
+	                <span class="discounted-price">€30</span>
+	                <h2>Eclipse Mood Lamp</h2>
+	                <p> </p>
+	                <a href="https://www.paypal.com/myaccount/money/cards/new/embeddable/manual" target="_blank" class="buy-now-btn">Buy Now</a>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+		
+	<!-- Footer -->
+	<footer>
+	    <p>&copy; 2025 Dariia Riabtseva | Lamps | All Rights Reserved</p>
+		<div class="social-links">
+			<a href="https://www.facebook.com" target="_blank">Facebook</a> |
+			<a href="https://www.instagram.com/dariia_riabtseva_/" target="_blank">Instagram</a>
+		</div>
+	 </footer>
 </body>
 </html>
