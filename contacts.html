@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Connect Us - GlowLight Lamps</title>
+    <title>Connect Us</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
 </head>
 <body>
-
-    <!-- Header -->
+<!-- Header -->
     <header>
         <nav>
             <div class="header logo">
                 <ul>
-                    <li><a href="index.html">LAMP STORE</a></li>
+					<li><a href="index.html"><img src="images/logo_picture.jpg" alt="LAMP STORE" style="width: 80px; height: auto; margin-right: 10px; vertical-align: middle;"></a></li>
+
                 </ul>
             </div>
-            <!-- Burger Icon -->
+<!-- Burger Icon -->
             <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -25,7 +25,7 @@
             </div>
         </nav>
 
-        <!-- Main Navigation Menu -->
+<!-- Main Navigation Menu -->
         <nav>
             <ul class="navbar" id="navbar">
 				<li><a href="index.html">Home</a></li>
@@ -36,36 +36,33 @@
     </header>
     <script src="script.js"></script>
 
-    <!-- Main Content -->
+<!-- Main Content -->
     <div class="contain">
-        <!-- Connect Info Section -->
+<!-- Connect Info Section -->
         <section class="connect-info">
             <h2 class="section-title">Contact Us</h2>
-            <p>We’d love to hear from you! Whether you have a question, feedback, or just want to chat about lamps, our team is here to help. Please feel free to get in touch with us through any of the following methods:</p>
-            <p><strong>Email:</strong> info.dariia@glowlights.com</p>
-            <p><strong>Phone:</strong> +353852106168</p>
-            <p><strong>Address:</strong> 123 Lamp Lane, Bright City, ABC 123</p>
+            <p>Keep in touch! If you have a question, feedback, or just want to chat about lamps, our team is here to help. Please feel free to get in touch with us through any of the following methods:</p>
+            <p><b>Email</b>: info.dariia@glowlights.com</p>
+            <p><b>Phone</b>: +353852106168</p>
+            <p><b>Address</b>: 23 Lamp street , Tullamore, ABC 123</p>
         </section>
-
-        <!-- Connect Form Section -->
+<!-- Connect Form Section -->
         <section class="connect-form">
-            <h2 class="section-title">Send Us a Message</h2>
-            <form action="#" method="POST">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+            <h2 class="section-title">Send a Letter</h2>
+            <form action="post" method="POST">
+                <label for="title">Your Name</label>
+                <input type="text" id="title" name="title" >
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email adress">Email</label>
+                <input type="mail" id="mail" name="email">
 
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+                <label for="note">Your Message</label>
+                <textarea id="note" name="note" rows="5"></textarea>
+                <button disabled >Send Message</button>
+ 				</form>
         </section>
     </div>
-
-    <!-- Footer -->
+<!-- Footer -->
     <footer>
         <p>&copy; 2025 Dariia Riabtseva | Lamps | All Rights Reserved</p>
         <div class="social-links">

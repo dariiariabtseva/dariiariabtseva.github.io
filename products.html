@@ -7,23 +7,22 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
 </head>
 <body>
-
-	<!-- Header -->
+<!-- Header -->
 	<header>
 	    <nav>
 	        <div class="header logo">
 	            <ul class="navbar">
-	                <li><a href="index.html">LAMP STORE</a></li>
+					<li><a href="index.html"><img src="images/logo_picture.jpg" alt="LAMP STORE" style="width: 80px; height: auto; margin-right: 10px; vertical-align: middle;"></a></li>
 	            </ul>
 	        </div>
-	        <!-- Burger Icon -->
+<!-- Burger Icon -->
 	        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
 	            <span class="bar"></span>
 	            <span class="bar"></span>
 	            <span class="bar"></span>
 	        </div>
 	    </nav>
-		<!-- Main Navigation Menu -->
+<!-- Main Navigation Menu -->
 		<nav>
 		    <ul class="navbar" id="navbar">
 				<li><a href="index.html">Home</a></li>
@@ -32,10 +31,9 @@
 		    </ul>
 		</nav>
 	</header>
-	<!-- Link to your JavaScript file -->
+<!-- Link to your JavaScript file -->
 	<script src="script.js"></script>
-
-	<!-- Gallery Section -->
+<!-- Gallery Section -->
 	<section class="gallery" id="gallery">
 		<div class="gallery-container">
 			<figure>
@@ -44,16 +42,14 @@
 			               <figcaption>Eclipse Mood Lamp</figcaption>
 			           </a>
 			       </figure>
-
-			       <!-- Link wrapped around the figure for the second product -->
+<!-- Link wrapped around the figure for the second product -->
 			       <figure>
 			           <a href="product2.html"> <!-- Link to the second product page -->
 			               <img src="images/product2.jpg" alt="Lamp Design 2">
 			               <figcaption>Aura Glow Table Lamp</figcaption>
 			           </a>
 			       </figure>
-
-			       <!-- Link wrapped around the figure for the third product -->
+<!-- Link wrapped around the figure for the third product -->
 			       <figure>
 			           <a href="product3.html"> <!-- Link to the third product page -->
 			               <img src="images/product3.jpg" alt="Lamp Design 3">
@@ -61,7 +57,7 @@
 			           </a>
 			       </figure>
 
-			       <!-- Link wrapped around the figure for the fourth product -->
+<!-- Link wrapped around the figure for the fourth product -->
 			       <figure>
 			           <a href="product4.html"> <!-- Link to the fourth product page -->
 			               <img src="images/product4.jpg" alt="Lamp Design 4">
@@ -70,33 +66,12 @@
 			       </figure> 	     	
 		</div>
 	</section>
-
-		<!-- Pricing Section -->
+<!-- Pricing Section -->
 	<section id="pricing">
 	    <div class="pricing-container">
-	        <h1>Special Offer</h1>
+	        <h1 class="blinking">Special Offer</h1>
 	        <div id="countdown"></div>
-	        <script>
-	            const targetDate = new Date("September 15, 2025 00:00:00").getTime();
 
-	            const countdownInterval = setInterval(function() {
-	                const now = new Date().getTime();
-	                const timeRemaining = targetDate - now;
-
-	                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-	                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-	                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-	                document.getElementById("countdown").innerHTML =
-	                    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-	                if (timeRemaining < 0) {
-	                    clearInterval(countdownInterval);
-	                    document.getElementById("countdown").innerHTML = "The special offer has ended!";
-	                }
-	            }, 1000);
-	        </script>
 
 	        <div class="pricing-card">
 	            <div class="pricing-card-content">
@@ -110,7 +85,7 @@
 	    </div>
 	</section>
 		
-	<!-- Footer -->
+<!-- Footer -->
 	<footer>
 	    <p>&copy; 2025 Dariia Riabtseva | Lamps | All Rights Reserved</p>
 		<div class="social-links">
