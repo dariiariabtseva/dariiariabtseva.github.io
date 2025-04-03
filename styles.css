@@ -22,11 +22,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   background:black;
   position: fixed;  /* Makes the header fixed */
-     top:0;
-  left: 0;          /* Aligns the header to the left edge of the page */
+    top:0;
+    left: 0;          /* Aligns the header to the left edge of the page */
     width: 100%;
 	z-index: 1000;    /* Ensures the header stays on top of other elements */
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow below the header */
@@ -37,16 +37,10 @@ h1
  {
   font-family: Arial, sans-serif;
   line-height: 2;
-  margin-top: 10px;
+  margin-top: 60px;
   color:white;
  }
 
-
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
-
-}
 
 header nav ul {
   list-style: none;
@@ -54,13 +48,13 @@ header nav ul {
 
 header nav ul li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 30px;
+  font-size:20px;
 }
 
 header nav ul li a {
   text-decoration: none;
-  color: #F4BB44; 
-  font-size: 18px;
+  color: #ff9933;
   font-weight: bold;
 }
 
@@ -73,6 +67,7 @@ header nav ul li a {
   justify-content: space-around;
   height: 25px;
   width: 30px;
+  color: #ff9933;
 }
 
 .menu-icon .bar {
@@ -80,6 +75,7 @@ header nav ul li a {
   width: 30px;
   background-color: #fff;
   border-radius: 5px;
+  color: #ff9933;
 }
 
 /* Show burger icon on smaller screens */
@@ -88,6 +84,7 @@ header nav ul li a {
     display: none;
     width: 100%;
     text-align: center;
+	color: #ff9933;
   }
 
   nav ul li {
@@ -96,6 +93,7 @@ header nav ul li a {
 
   .menu-icon {
     display: flex;
+	color: #ff9933;
   }
 
   .navbar.active {
@@ -108,30 +106,27 @@ header nav ul li a {
   }
 
   nav ul li a {
-    font-size: 24px;
+    font-size: 20px;
     padding: 15px;
     color: #fff;
     text-decoration: none;
+	border:1px;
+	border-color:orange;
   }
 
-  nav ul li a:hover {
-    background-color: #444;
-  }
 }
-
-
 /* Hero Section */
 .hero {
    color: yellow;
-    padding: 120px 20px;
-/*  background-image: url('images/img.jpg'); /* Path to your background image */
-   background-image: url('images/logo.gif');
+    padding: 140px 20px;
+     background-image: url('images/logo.gif');
       background-size: cover;        /* Cover the entire hero section */
       background-position: center;   /* Center the image */
       background-repeat: no-repeat;  /* Prevent the image from repeating */
       color:  white;                  /* Text color to stand out on the background */
       text-align:right ;
 	  padding-top:150px;
+	  width:100%;
 
 }
 
@@ -140,22 +135,32 @@ header nav ul li a {
  background: #4CAF50;
   color: orange;
   margin: 5px; /* Adds 5px margin around the section */
-  padding: 10px; /* Adds padding inside the section */
+  padding: 30px; /* Adds padding inside the section */
   border-radius: 8px; /* Rounds the corners of the section */
- box-shadow: 4px 4px 10px #ffc300; 
-  
-  text-align: center; /* Centers the content inside */
+  box-shadow: 4px 4px 10px #ffc300; 
+   text-align: center; /* Centers the content inside */
   position: center; /* Positions the section to the right */
   font-size: 1.8em; /* Increases the font size */
   font: italic; /* Makes the text italic */
   display: block; /* Makes the .aboutme section behave like a block element */
   background-color:white; /* Sets the background color to white */
-      width: 100%;
-      height: 50%;
+  width: 98%;
+  height: 50%;
 	}
 
+	/* Media query for smaller screens (max-width: 768px) */
+	@media (max-width: 768px) {
+	   .popular h2 {
+	        font-size: 20px; /* Smaller font size for screens less than or equal to 768px wide */
+	    }
+	}
 
-
+	/* Further reduction for extra small screens (max-width: 480px) */
+	@media (max-width: 480px) {
+	    .popular h2 {
+	        font-size: 20px; /* Even smaller font size for extra small screens */
+	    }
+}
 /* Default styles for larger screens */
 .hero.h1 {
     font-size: 30px; /* Default font size for larger screens */
@@ -240,7 +245,7 @@ header nav ul li a {
 #pricing {
   padding: 60px 20px;
   text-align: center;
-  background-image: url('images/max.png'); /* Path to your background image */
+   /* background-image: url('images/max.png'); /* Path to your background image */
   background-size: cover;        /* Cover the entire hero section */
   background-position: center;   /* Center the image */
   background-repeat: no-repeat;  /* Prevent the image from repeating */
@@ -295,9 +300,11 @@ footer {
   text-align: center;
   padding: 20px;
   background: black;
- color: #F4BB44;
+ color: #ff9933;
   font-size: 18px;
   font-weight: bold;
+  padding-top:30px;
+  margin-top: 50px;
 }
 
 footer .social-links {
@@ -306,7 +313,7 @@ footer .social-links {
 
 footer .social-links a {
   text-decoration: none;
-  color: #F4BB44;
+  color: #ff9933;
   margin: 0 10px;
 }
 
@@ -335,6 +342,7 @@ footer .social-links a:hover {
 
   .hero {
     padding: 60px 20px;
+	
   }
 }
 
@@ -375,7 +383,7 @@ footer .social-links a:hover {
 
 /* Gallery Section */
 .gallery {
-    padding: 40px;
+    padding: 15px;
     background: #FFFDD0;
     text-align: center;
 }
@@ -419,7 +427,7 @@ footer .social-links a:hover {
 
 .story, .mission, .vision {
     width: 95%; /* More flexible */
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 15px;
 }
 
@@ -489,11 +497,6 @@ footer .social-links a:hover {
   margin-bottom: 20px;
 }
 
-.original-price {
-  font-size: 1.2rem;
-  color: #888;
-  text-decoration: line-through;
-}
 
 .discounted-price {
   font-size: 1.5rem;
@@ -504,6 +507,7 @@ footer .social-links a:hover {
 
 .blinking {
     animation: blink 1s steps(2, start) infinite;
+	color:red;
 }
 @keyframes blink {
     0% { opacity: 1; }
@@ -517,22 +521,22 @@ footer .social-links a:hover {
 
        .mission, .vision {
            background: #FFFAA0;
-           padding: 30px;
+           padding: 15px;
            border-radius: 10px;
            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-           margin-top: 50px;
+           margin-top: 30px;
            transition: transform 0.3s ease-in-out;
 		text-align:4;
        }
 	.mission h2 		{
 	           					text-align:center;
-								 padding: 30px;
-								color:orange;
+								 padding: 16px;
+								color:red;
 	        }
-			.mission p 		{
+mission p 		{
 			           					text-align:left;
 										 padding: 30px;
-										
+										 font-size: 1.2rem;
 			        }
        .mission:hover, .vision:hover {
            transform: scale(1.02);
@@ -555,7 +559,7 @@ footer .social-links a:hover {
 	   		    flex-wrap: wrap;
 	   		    justify-content: center; /* Center content */
 	   		    margin-bottom: 40px;
-	   		    margin-top: 50px; /* Space above */
+	   		    margin-top: 150px; /* Space above */
 	   		}
 
 	   		.product-image {
@@ -603,7 +607,7 @@ footer .social-links a:hover {
 	   		th {
 	   		    background-color: #333;
 	   		    color: white;
-	   		    padding: 12px 15px;
+	   		    padding: 12px 5px;
 	   		    border-top-left-radius: 10px; /* Rounded top-left corner */
 	   		    border-top-right-radius: 10px; /* Rounded top-right corner */
 	   		    text-transform: uppercase;
@@ -755,9 +759,9 @@ footer .social-links a:hover {
 	           }
 	           .original-price {
 	               text-decoration: line-through;
-	               color: #7f8c8d;
-	               font-size: 1.2em;
-	               margin-left: 10px;
+	               color: green;
+	               font-size: 1.8em;
+	               margin-left: 30px;
 	           }
 	           .save-price {
 	               font-size: 1.2em;
@@ -790,7 +794,10 @@ footer .social-links a:hover {
 	   			
 	   		}
 			
-			
+			.intro {
+			   		    padding-top: 150px;
+			   			
+			   		}	
 			
 			
 			
@@ -841,7 +848,7 @@ footer .social-links a:hover {
 				.connect-form
 				h2, 		.connect-info 		h2
 				{
-				            color: orange
+				            color: red;
 				        }
 				       
 												
@@ -851,7 +858,7 @@ footer .social-links a:hover {
 							    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 							    gap: 20px;
 							    padding: 20px;
-							    padding-top: 40px; /* Adds space above all images */
+							    padding-top: 150px; /* Adds space above all images */
 							}
 
 							.gallery-container figure {
@@ -885,14 +892,15 @@ footer .social-links a:hover {
 							
 							#pricing {
 							    background-color: #f9f9f9;
-							    padding: 10px 10px;
+							    padding: 0px;
 							    text-align: center;
-							    font-family: 'Arial', sans-serif;
+							    
 							}
 
 							.pricing-container {
-							    max-width: 1200px;
+							    width: 100%;
 							    margin: 0 auto;
+								background-color:#FFFAA0;
 							}
 
 							#countdown {
@@ -904,15 +912,15 @@ footer .social-links a:hover {
 
 							h1 {
 							    font-size: 2.5em;
-							    margin-bottom: 40px;
+							    margin-bottom: 90px;
 							    color:white;
-							    font-family: 'Arial', sans-serif;
-							}
+								
+							    }
 
 							/* Pricing Card */
 							
 							.pricing-card {
-							    background: linear-gradient(135deg, #ff9e2c, #ff6159);
+							    background: linear-gradient(135deg, yellow, #ff6159);
 							    border-radius: 10px;
 							    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 							    width: 100%;
@@ -920,8 +928,9 @@ footer .social-links a:hover {
 							    margin: 0 auto;
 							    transition: transform 0.3s ease;
 							    overflow: hidden;
-							    padding: 20px;
+							    padding: 10px;
 							    position: relative;
+								padding-bottom:30px;
 							}
 
 							.pricing-card:hover {
@@ -930,15 +939,15 @@ footer .social-links a:hover {
 
 							.pricing-card-content {
 							    text-align: center;
-							    padding: 30px 0;
-							    color: #fff;
+							    padding: 30px 30px;
 							}
 
 							.original-price {
-							    font-size: 1.6em;
+							    font-size: 2.2em;
 							    text-decoration: line-through;
 							    color: #d3d3d3;
-							    margin-bottom: 10px;
+							    margin-bottom: 30px;
+								font-weight: bold;
 							}
 
 							.discounted-price {
@@ -955,10 +964,10 @@ footer .social-links a:hover {
 							}
 
 							
-							.buy-now-btn {
+.buy-now-btn {
 							    background-color: #fff;
 							    color: #ff6159;
-							    padding: 12px 25px;
+							    padding: 5px 25px;
 							    text-decoration: none;
 							    font-size: 1.3em;
 							    font-weight: bold;
@@ -966,8 +975,7 @@ footer .social-links a:hover {
 							    transition: background-color 0.3s ease, transform 0.3s ease;
 							    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 							}
-
-							.buy-now-btn:hover {
+.buy-now-btn:hover {
 							    background-color: #ff9e2c;
 							    color: white;
 							    transform: translateY(-5px);
