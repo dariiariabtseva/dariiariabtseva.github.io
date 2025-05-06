@@ -11,8 +11,8 @@ body {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   width: 100%; /* Ensure the body takes full width on smaller screens */
-   overflow-x: hidden; /* Prevent horizontal scrolling */
+   width: 100%; 
+   overflow-x: hidden; 
     text-align:justify;
 background:#FFFDD0;
     }
@@ -25,12 +25,11 @@ header {
   padding: 15px;
   background:black;
   position: fixed;  /* Makes the header fixed */
-    top:0;
-    left: 0;          /* Aligns the header to the left edge of the page */
-    width: 100%;
-	z-index: 1000;    /* Ensures the header stays on top of other elements */
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow below the header */
-
+  top:0;
+  left: 0;          /* Aligns the header to the left edge of the page */
+  width: 100%;
+  z-index: 1000;    /* Ensures the header stays on top of other elements */
+ 
 }
 
 h1
@@ -40,7 +39,6 @@ h1
   margin-top: 60px;
   color:white;
  }
-
 
 header nav ul {
   list-style: none;
@@ -58,23 +56,23 @@ header nav ul li a {
   font-weight: bold;
 }
 
-/* Burger Icon Styling */
+/* Burger Icon */
 .menu-icon {
   display: none;
   cursor: pointer;
   flex-direction: column;
   align-items: center;
+  color: #ff9933;
   justify-content: space-around;
   height: 25px;
   width: 30px;
-  color: #ff9933;
 }
 
 .menu-icon .bar {
+ background-color: #fff;
+  border-radius: 5px;
   height: 4px;
   width: 30px;
-  background-color: #fff;
-  border-radius: 5px;
   color: #ff9933;
 }
 
@@ -123,7 +121,7 @@ header nav ul li a {
       background-size: cover;        /* Cover the entire hero section */
       background-position: center;   /* Center the image */
       background-repeat: no-repeat;  /* Prevent the image from repeating */
-      color:  white;                  /* Text color to stand out on the background */
+      color:  white;                 /* Text color to stand out on the background */
       text-align:right ;
 	  padding-top:150px;
 	  width:100%;
@@ -132,38 +130,36 @@ header nav ul li a {
 
 
 .popular {
- background: #4CAF50;
+  background: #4CAF50;
   color: orange;
-  margin: 5px; /* Adds 5px margin around the section */
-  padding: 30px; /* Adds padding inside the section */
-  border-radius: 8px; /* Rounds the corners of the section */
-  box-shadow: 4px 4px 10px #ffc300; 
-   text-align: center; /* Centers the content inside */
-  position: center; /* Positions the section to the right */
-  font-size: 1.8em; /* Increases the font size */
-  font: italic; /* Makes the text italic */
-  display: block; /* Makes the .aboutme section behave like a block element */
-  background-color:white; /* Sets the background color to white */
+  margin: 5px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px #ffc300;
+  text-align: center;
+  font-style: italic;
+  display: block;
+  background-color: white;
   width: 98%;
   height: 50%;
-	}
+}
 
-	/* Media query for smaller screens (max-width: 768px) */
+/* Media query for smaller screens (max-width: 768px) */
 	@media (max-width: 768px) {
 	   .popular h2 {
-	        font-size: 20px; /* Smaller font size for screens less than or equal to 768px wide */
+	        font-size: 20px; 
 	    }
 	}
 
 	/* Further reduction for extra small screens (max-width: 480px) */
 	@media (max-width: 480px) {
 	    .popular h2 {
-	        font-size: 20px; /* Even smaller font size for extra small screens */
+	        font-size: 20px; 
 	    }
 }
 /* Default styles for larger screens */
 .hero.h1 {
-    font-size: 30px; /* Default font size for larger screens */
+    font-size: 30px; 
 	color:white;
 }
 
@@ -193,7 +189,7 @@ header nav ul li a {
   background: #45a049;
 }
 
-/* Features Section */
+/* Features */
 #features {
   padding: 60px 20px;
   background: #FFFDD0;
@@ -243,16 +239,13 @@ header nav ul li a {
 
 /* Pricing Section */
 #pricing {
-  padding: 60px 20px;
   text-align: center;
-   /* background-image: url('images/max.png'); /* Path to your background image */
-  background-size: cover;        /* Cover the entire hero section */
-  background-position: center;   /* Center the image */
-  background-repeat: no-repeat;  /* Prevent the image from repeating */
-  color:  black;                  /* Text color to stand out on the background */
+   background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  color:  black;                  
   text-align: center;
   padding: 80px 20px;
-  
 }
 
 #pricing .pricing-plan {
@@ -359,8 +352,9 @@ footer .social-links a:hover {
 }
 
 .video-section video {
-    width: 100vw;
-    max-width: 80vw;
+    width: 50vw;
+    max-width: 50vw;
+	height: 500px;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -395,8 +389,6 @@ footer .social-links a:hover {
 }
 
 
-
-
 /* Grid Layout with Larger Columns */
 .gallery-container {
     display: grid;
@@ -410,13 +402,11 @@ footer .social-links a:hover {
     height: 100%;
     object-fit: cover; /* Keeps image proportions */
     border-radius: 8px;
-    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 	text-align:center;
-	
 	display: inline-block;
 	justify-content: center;
-	 align-items: center;
+	align-items: center;
 }
 .img img {
     width: 60%;
@@ -429,37 +419,41 @@ footer .social-links a:hover {
     width: 95%; /* More flexible */
     margin: 10px auto;
     padding: 15px;
+	
+}
+
+ .mission, .vision {
+   font-style: italic;
+   line-height: 2;
+   text-align: center;
+   
 }
 
 /* Hover Effect */
 .gallery-container img:hover {
-    transform: scale(1); /* Slightly larger scale */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
-	position:center;
-	display: flex;
-
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 @media (max-width: 768px) {
     .gallery-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     }
 }
 
 @media (max-width: 480px) {
     .gallery-container {
-        grid-template-columns: 1fr; /* Single-column layout for very small screens */
+        grid-template-columns: 1fr; 
     }
 }
 
 .mission, .vision {
                 font-size: 1rem; /* Smaller text for mobile */
+				text-align: justify;
             }
        
-
         @media (max-width: 480px) {
-            /* For very small screens like phones in portrait mode */
+ /* For very small screens like phones in portrait mode */
             h1 {
                 font-size: 1.5rem; /* Smaller header */
             }
@@ -491,10 +485,10 @@ footer .social-links a:hover {
 }
 
 .price-section {
-  display: flex;
-  align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -525,31 +519,28 @@ footer .social-links a:hover {
            border-radius: 10px;
            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
            margin-top: 30px;
-           transition: transform 0.3s ease-in-out;
-		text-align:4;
-       }
+                  }
 	.mission h2 		{
 	           					text-align:center;
 								 padding: 16px;
 								color:red;
 	        }
 mission p 		{
-			           					text-align:left;
+			           					text-align:center;
 										 padding: 30px;
-										 font-size: 1.2rem;
+										 font-size: 2rem;
 			        }
        .mission:hover, .vision:hover {
            transform: scale(1.02);
        }
 
-       .story {
-           margin-top: 40px;
-           font-size: 1.2rem;
-           color: #555;
-           margin: 40px auto;
-           text-align: 99%;
-		
-       }
+	   .story {
+	     margin-top: 40px;
+	     font-size: 1.2rem;
+	     color: #555;
+	     margin: 40px auto;
+	     text-align: justify;
+	   }
 	   
 	   
 	   
@@ -636,7 +627,7 @@ mission p 		{
 	   		    background-color: #f6eca1; /* Light highlight on hover */
 	   		}
 
-	   		/* Add Border to Entire Table */
+/* Add Border to Entire Table */
 	   		table {
 	   		    border: 2px solid orange; /* Dark border around the table */
 	   		    border-radius: 10px; /* Rounded corners for the table */
@@ -644,13 +635,12 @@ mission p 		{
 	   		}	
 	   		
 	   				
-	   		/* Media Query for Tablets (600px to 768px) */
+/* Media Query for Tablets (600px to 768px) */
 	   		@media (max-width: 768px) {
 	   		    .product-container {
 	   		        flex-direction: column; /* Stack the image and details vertically */
 	   		        align-items: center; /* Center everything */
 	   		    }
-
 	   		    .product-image {
 	   		        margin-right: 0;
 	   		        max-width: 100%;
